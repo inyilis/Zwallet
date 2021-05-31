@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReceiverComponentView" customModule="Core" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="sAv-En-vPy"/>
+                <outlet property="userImage" destination="mc9-TW-BjC" id="Qg0-1G-N1u"/>
+                <outlet property="userName" destination="Q64-Ib-gN5" id="4ie-Ug-WqX"/>
+                <outlet property="userPhoneNumber" destination="4dI-hE-xCf" id="eeh-Kk-71E"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mc9-TW-BjC">
+                    <rect key="frame" x="16" y="20" width="56" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="8qy-bs-hia"/>
+                        <constraint firstAttribute="width" constant="56" id="AcY-ic-XRJ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q64-Ib-gN5">
+                    <rect key="frame" x="87" y="23" width="43" height="19"/>
+                    <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="16"/>
+                    <color key="textColor" name="ReceiverName"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dI-hE-xCf">
+                    <rect key="frame" x="88" y="56.5" width="95" height="16.5"/>
+                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
+                    <color key="textColor" name="ReceiverPhone"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mc9-TW-BjC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="49o-U7-IIq"/>
+                <constraint firstItem="Q64-Ib-gN5" firstAttribute="leading" secondItem="mc9-TW-BjC" secondAttribute="trailing" constant="15" id="7be-yg-SeZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mc9-TW-BjC" secondAttribute="bottom" constant="20" id="DBc-rq-4Nn"/>
+                <constraint firstItem="mc9-TW-BjC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="FxB-ae-Asi"/>
+                <constraint firstItem="4dI-hE-xCf" firstAttribute="leading" secondItem="mc9-TW-BjC" secondAttribute="trailing" constant="16" id="tEN-cy-8Vq"/>
+                <constraint firstItem="Q64-Ib-gN5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="23" id="v3S-sT-Dlj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4dI-hE-xCf" secondAttribute="bottom" constant="23" id="wna-dv-3lS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="140.80000000000001" y="416.0419790104948"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="ReceiverName">
+            <color red="0.30199998617172241" green="0.29399999976158142" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ReceiverPhone">
+            <color red="0.4779999852180481" green="0.47099998593330383" blue="0.52499997615814209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

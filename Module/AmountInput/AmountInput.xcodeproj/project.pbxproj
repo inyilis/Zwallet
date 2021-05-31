@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1E899F33C059EAF182C5B99 /* Pods_AmountInput.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F323B32C49F90ABA7B90386 /* Pods_AmountInput.framework */; };
+		FA10A509266360DF00C29812 /* ConfirmPinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A508266360DF00C29812 /* ConfirmPinPresenter.swift */; };
+		FA10A50B266360F200C29812 /* ConfirmPinInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A50A266360F200C29812 /* ConfirmPinInteractorOutput.swift */; };
+		FA10A50D266360FD00C29812 /* ConfirmPinPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A50C266360FD00C29812 /* ConfirmPinPresenterImpl.swift */; };
+		FA10A52126636C0A00C29812 /* ConfirmPinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A52026636C0A00C29812 /* ConfirmPinInteractor.swift */; };
+		FA10A52326636CA300C29812 /* ConfirmPinInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A52226636CA300C29812 /* ConfirmPinInteractorImpl.swift */; };
+		FA10A52526636F5D00C29812 /* ConfirmPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A52426636F5D00C29812 /* ConfirmPinView.swift */; };
+		FA10A58C26638D4E00C29812 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A58A26638D4E00C29812 /* DetailsViewController.swift */; };
+		FA10A58D26638D4E00C29812 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA10A58B26638D4E00C29812 /* DetailsViewController.xib */; };
+		FA10A5902663AB3C00C29812 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A58F2663AB3C00C29812 /* DetailsRouter.swift */; };
+		FA10A5922663AB4A00C29812 /* DetailsRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A5912663AB4A00C29812 /* DetailsRouterImpl.swift */; };
+		FA10A5952663AB6700C29812 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A5942663AB6700C29812 /* DetailsPresenter.swift */; };
+		FA10A5972663AB7400C29812 /* DetailsPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10A5962663AB7400C29812 /* DetailsPresenterImpl.swift */; };
+		FA22E9A22662071A0084A87A /* AmountInput.h in Headers */ = {isa = PBXBuildFile; fileRef = FA22E9A02662071A0084A87A /* AmountInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA32CF622663594600B97C9E /* ConfirmPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32CF602663594600B97C9E /* ConfirmPinViewController.swift */; };
+		FA32CF632663594600B97C9E /* ConfirmPinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA32CF612663594600B97C9E /* ConfirmPinViewController.xib */; };
+		FA32CF6626635AD600B97C9E /* ConfirmPinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32CF6526635AD600B97C9E /* ConfirmPinRouter.swift */; };
+		FA32CF6826635AE200B97C9E /* ConfirmPinRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32CF6726635AE200B97C9E /* ConfirmPinRouterImpl.swift */; };
+		FA631734266286980056B9EE /* AmountConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA631732266286980056B9EE /* AmountConfirmViewController.swift */; };
+		FA631735266286980056B9EE /* AmountConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA631733266286980056B9EE /* AmountConfirmViewController.xib */; };
+		FA6317392662946D0056B9EE /* AmountConfirmRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6317382662946D0056B9EE /* AmountConfirmRouter.swift */; };
+		FA63173B266294790056B9EE /* AmountConfirmRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63173A266294790056B9EE /* AmountConfirmRouterImpl.swift */; };
+		FA63173D266296A10056B9EE /* AmountConfirmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63173C266296A10056B9EE /* AmountConfirmPresenter.swift */; };
+		FA63173F266296B20056B9EE /* AmountConfirmPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63173E266296B20056B9EE /* AmountConfirmPresenterImpl.swift */; };
+		FA6317482662B1830056B9EE /* AmountConfirmInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6317472662B1830056B9EE /* AmountConfirmInteractor.swift */; };
+		FA63174A2662B19B0056B9EE /* AmountConfirmInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6317492662B19B0056B9EE /* AmountConfirmInteractorOutput.swift */; };
+		FA63174C2662B1A60056B9EE /* AmountConfirmInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63174B2662B1A60056B9EE /* AmountConfirmInteractorImpl.swift */; };
+		FA63174F2662B4B70056B9EE /* AmountConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63174E2662B4B70056B9EE /* AmountConfirmView.swift */; };
+		FAD1BF302662247400569AED /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD1BF2F2662247400569AED /* Core.framework */; };
+		FAD1BF312662247400569AED /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAD1BF2F2662247400569AED /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAD1BF392662283500569AED /* AmountInputRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1BF382662283500569AED /* AmountInputRouter.swift */; };
+		FAD1BF3B2662289D00569AED /* AmountInputRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1BF3A2662289D00569AED /* AmountInputRouterImpl.swift */; };
+		FAD1BF4526622F8B00569AED /* AmountInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1BF4426622F8B00569AED /* AmountInputPresenter.swift */; };
+		FAD1BF472662301A00569AED /* AmountInputPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1BF462662301A00569AED /* AmountInputPresenterImpl.swift */; };
+		FAD42BCB26620FE80090E9D0 /* AmountInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD42BC926620FE80090E9D0 /* AmountInputViewController.swift */; };
+		FAD42BCC26620FE80090E9D0 /* AmountInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD42BCA26620FE80090E9D0 /* AmountInputViewController.xib */; };
+		FAD42BCF266210600090E9D0 /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD42BCE266210600090E9D0 /* Asset.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAD1BF322662247400569AED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FAD1BF312662247400569AED /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C8E7C05B602E8A6135EBB09 /* Pods-AmountInput.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmountInput.release.xcconfig"; path = "Target Support Files/Pods-AmountInput/Pods-AmountInput.release.xcconfig"; sourceTree = "<group>"; };
+		1F323B32C49F90ABA7B90386 /* Pods_AmountInput.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmountInput.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D4CE1DA3B389487F8D070EF /* Pods-AmountInput.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmountInput.debug.xcconfig"; path = "Target Support Files/Pods-AmountInput/Pods-AmountInput.debug.xcconfig"; sourceTree = "<group>"; };
+		FA10A508266360DF00C29812 /* ConfirmPinPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPinPresenter.swift; sourceTree = "<group>"; };
+		FA10A50A266360F200C29812 /* ConfirmPinInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPinInteractorOutput.swift; sourceTree = "<group>"; };
+		FA10A50C266360FD00C29812 /* ConfirmPinPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPinPresenterImpl.swift; sourceTree = "<group>"; };
+		FA10A52026636C0A00C29812 /* ConfirmPinInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPinInteractor.swift; sourceTree = "<group>"; };
+		FA10A52226636CA300C29812 /* ConfirmPinInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPinInteractorImpl.swift; sourceTree = "<group>"; };
+		FA10A52426636F5D00C29812 /* ConfirmPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPinView.swift; sourceTree = "<group>"; };
+		FA10A58A26638D4E00C29812 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		FA10A58B26638D4E00C29812 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		FA10A58F2663AB3C00C29812 /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		FA10A5912663AB4A00C29812 /* DetailsRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouterImpl.swift; sourceTree = "<group>"; };
+		FA10A5942663AB6700C29812 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		FA10A5962663AB7400C29812 /* DetailsPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenterImpl.swift; sourceTree = "<group>"; };
+		FA22E99D2662071A0084A87A /* AmountInput.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmountInput.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA22E9A02662071A0084A87A /* AmountInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmountInput.h; sourceTree = "<group>"; };
+		FA22E9A12662071A0084A87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA32CF602663594600B97C9E /* ConfirmPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPinViewController.swift; sourceTree = "<group>"; };
+		FA32CF612663594600B97C9E /* ConfirmPinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmPinViewController.xib; sourceTree = "<group>"; };
+		FA32CF6526635AD600B97C9E /* ConfirmPinRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPinRouter.swift; sourceTree = "<group>"; };
+		FA32CF6726635AE200B97C9E /* ConfirmPinRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPinRouterImpl.swift; sourceTree = "<group>"; };
+		FA631732266286980056B9EE /* AmountConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountConfirmViewController.swift; sourceTree = "<group>"; };
+		FA631733266286980056B9EE /* AmountConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountConfirmViewController.xib; sourceTree = "<group>"; };
+		FA6317382662946D0056B9EE /* AmountConfirmRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountConfirmRouter.swift; sourceTree = "<group>"; };
+		FA63173A266294790056B9EE /* AmountConfirmRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountConfirmRouterImpl.swift; sourceTree = "<group>"; };
+		FA63173C266296A10056B9EE /* AmountConfirmPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountConfirmPresenter.swift; sourceTree = "<group>"; };
+		FA63173E266296B20056B9EE /* AmountConfirmPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountConfirmPresenterImpl.swift; sourceTree = "<group>"; };
+		FA6317472662B1830056B9EE /* AmountConfirmInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountConfirmInteractor.swift; sourceTree = "<group>"; };
+		FA6317492662B19B0056B9EE /* AmountConfirmInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountConfirmInteractorOutput.swift; sourceTree = "<group>"; };
+		FA63174B2662B1A60056B9EE /* AmountConfirmInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountConfirmInteractorImpl.swift; sourceTree = "<group>"; };
+		FA63174E2662B4B70056B9EE /* AmountConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountConfirmView.swift; sourceTree = "<group>"; };
+		FAD1BF2F2662247400569AED /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD1BF382662283500569AED /* AmountInputRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInputRouter.swift; sourceTree = "<group>"; };
+		FAD1BF3A2662289D00569AED /* AmountInputRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInputRouterImpl.swift; sourceTree = "<group>"; };
+		FAD1BF4426622F8B00569AED /* AmountInputPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInputPresenter.swift; sourceTree = "<group>"; };
+		FAD1BF462662301A00569AED /* AmountInputPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInputPresenterImpl.swift; sourceTree = "<group>"; };
+		FAD42BC926620FE80090E9D0 /* AmountInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInputViewController.swift; sourceTree = "<group>"; };
+		FAD42BCA26620FE80090E9D0 /* AmountInputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountInputViewController.xib; sourceTree = "<group>"; };
+		FAD42BCE266210600090E9D0 /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asset.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA22E99A2662071A0084A87A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E899F33C059EAF182C5B99 /* Pods_AmountInput.framework in Frameworks */,
+				FAD1BF302662247400569AED /* Core.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0523F0CC64598E3534DC1BD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1BF2F2662247400569AED /* Core.framework */,
+				1F323B32C49F90ABA7B90386 /* Pods_AmountInput.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4DA0A02AD783D94D704840D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D4CE1DA3B389487F8D070EF /* Pods-AmountInput.debug.xcconfig */,
+				0C8E7C05B602E8A6135EBB09 /* Pods-AmountInput.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../App/Pods;
+			sourceTree = "<group>";
+		};
+		FA10A5062663607300C29812 /* ConfirmPin */ = {
+			isa = PBXGroup;
+			children = (
+				FA10A52026636C0A00C29812 /* ConfirmPinInteractor.swift */,
+				FA10A50A266360F200C29812 /* ConfirmPinInteractorOutput.swift */,
+				FA10A52226636CA300C29812 /* ConfirmPinInteractorImpl.swift */,
+			);
+			path = ConfirmPin;
+			sourceTree = "<group>";
+		};
+		FA10A5072663607C00C29812 /* ConfirmPin */ = {
+			isa = PBXGroup;
+			children = (
+				FA10A508266360DF00C29812 /* ConfirmPinPresenter.swift */,
+				FA10A50C266360FD00C29812 /* ConfirmPinPresenterImpl.swift */,
+			);
+			path = ConfirmPin;
+			sourceTree = "<group>";
+		};
+		FA10A58926638D0500C29812 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				FA10A58A26638D4E00C29812 /* DetailsViewController.swift */,
+				FA10A58B26638D4E00C29812 /* DetailsViewController.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		FA10A58E2663AB1A00C29812 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				FA10A58F2663AB3C00C29812 /* DetailsRouter.swift */,
+				FA10A5912663AB4A00C29812 /* DetailsRouterImpl.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		FA10A5932663AB5200C29812 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				FA10A5942663AB6700C29812 /* DetailsPresenter.swift */,
+				FA10A5962663AB7400C29812 /* DetailsPresenterImpl.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		FA22E9932662071A0084A87A = {
+			isa = PBXGroup;
+			children = (
+				FA22E99F2662071A0084A87A /* AmountInput */,
+				FA22E99E2662071A0084A87A /* Products */,
+				C4DA0A02AD783D94D704840D /* Pods */,
+				0523F0CC64598E3534DC1BD3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA22E99E2662071A0084A87A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA22E99D2662071A0084A87A /* AmountInput.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA22E99F2662071A0084A87A /* AmountInput */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1BF36266227FD00569AED /* Presenter */,
+				FA6317452662B0F40056B9EE /* Interactor */,
+				FAD1BF34266227DA00569AED /* Router */,
+				FAD42BBB26620A910090E9D0 /* View */,
+				FAD42BCE266210600090E9D0 /* Asset.xcassets */,
+				FA22E9A02662071A0084A87A /* AmountInput.h */,
+				FA22E9A12662071A0084A87A /* Info.plist */,
+			);
+			path = AmountInput;
+			sourceTree = "<group>";
+		};
+		FA32CF6426635ABA00B97C9E /* ConfirmPin */ = {
+			isa = PBXGroup;
+			children = (
+				FA32CF6526635AD600B97C9E /* ConfirmPinRouter.swift */,
+				FA32CF6726635AE200B97C9E /* ConfirmPinRouterImpl.swift */,
+			);
+			path = ConfirmPin;
+			sourceTree = "<group>";
+		};
+		FA6317362662941D0056B9EE /* AmountConfirm */ = {
+			isa = PBXGroup;
+			children = (
+				FA6317382662946D0056B9EE /* AmountConfirmRouter.swift */,
+				FA63173A266294790056B9EE /* AmountConfirmRouterImpl.swift */,
+			);
+			path = AmountConfirm;
+			sourceTree = "<group>";
+		};
+		FA6317372662942E0056B9EE /* AmountConfirm */ = {
+			isa = PBXGroup;
+			children = (
+				FA63173C266296A10056B9EE /* AmountConfirmPresenter.swift */,
+				FA63173E266296B20056B9EE /* AmountConfirmPresenterImpl.swift */,
+			);
+			path = AmountConfirm;
+			sourceTree = "<group>";
+		};
+		FA6317452662B0F40056B9EE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FA10A5062663607300C29812 /* ConfirmPin */,
+				FA6317462662B1600056B9EE /* AmountConfirm */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FA6317462662B1600056B9EE /* AmountConfirm */ = {
+			isa = PBXGroup;
+			children = (
+				FA6317472662B1830056B9EE /* AmountConfirmInteractor.swift */,
+				FA6317492662B19B0056B9EE /* AmountConfirmInteractorOutput.swift */,
+				FA63174B2662B1A60056B9EE /* AmountConfirmInteractorImpl.swift */,
+			);
+			path = AmountConfirm;
+			sourceTree = "<group>";
+		};
+		FA6480B5266357D400427B0C /* ConfirmPin */ = {
+			isa = PBXGroup;
+			children = (
+				FA32CF602663594600B97C9E /* ConfirmPinViewController.swift */,
+				FA32CF612663594600B97C9E /* ConfirmPinViewController.xib */,
+				FA10A52426636F5D00C29812 /* ConfirmPinView.swift */,
+			);
+			path = ConfirmPin;
+			sourceTree = "<group>";
+		};
+		FAD1BF34266227DA00569AED /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FA10A58E2663AB1A00C29812 /* Details */,
+				FA32CF6426635ABA00B97C9E /* ConfirmPin */,
+				FA6317362662941D0056B9EE /* AmountConfirm */,
+				FAD1BF372662281900569AED /* AmountInput */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FAD1BF36266227FD00569AED /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA10A5932663AB5200C29812 /* Details */,
+				FA10A5072663607C00C29812 /* ConfirmPin */,
+				FA6317372662942E0056B9EE /* AmountConfirm */,
+				FAD1BF4326622F6100569AED /* AmountInput */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FAD1BF372662281900569AED /* AmountInput */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1BF382662283500569AED /* AmountInputRouter.swift */,
+				FAD1BF3A2662289D00569AED /* AmountInputRouterImpl.swift */,
+			);
+			path = AmountInput;
+			sourceTree = "<group>";
+		};
+		FAD1BF4326622F6100569AED /* AmountInput */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1BF4426622F8B00569AED /* AmountInputPresenter.swift */,
+				FAD1BF462662301A00569AED /* AmountInputPresenterImpl.swift */,
+			);
+			path = AmountInput;
+			sourceTree = "<group>";
+		};
+		FAD42BBB26620A910090E9D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA10A58926638D0500C29812 /* Details */,
+				FA6480B5266357D400427B0C /* ConfirmPin */,
+				FAD42BBD26620AB70090E9D0 /* AmountConfirm */,
+				FAD42BBC26620AA20090E9D0 /* AmountInput */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAD42BBC26620AA20090E9D0 /* AmountInput */ = {
+			isa = PBXGroup;
+			children = (
+				FAD42BC926620FE80090E9D0 /* AmountInputViewController.swift */,
+				FAD42BCA26620FE80090E9D0 /* AmountInputViewController.xib */,
+			);
+			path = AmountInput;
+			sourceTree = "<group>";
+		};
+		FAD42BBD26620AB70090E9D0 /* AmountConfirm */ = {
+			isa = PBXGroup;
+			children = (
+				FA631732266286980056B9EE /* AmountConfirmViewController.swift */,
+				FA631733266286980056B9EE /* AmountConfirmViewController.xib */,
+				FA63174E2662B4B70056B9EE /* AmountConfirmView.swift */,
+			);
+			path = AmountConfirm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FA22E9982662071A0084A87A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA22E9A22662071A0084A87A /* AmountInput.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FA22E99C2662071A0084A87A /* AmountInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA22E9A52662071A0084A87A /* Build configuration list for PBXNativeTarget "AmountInput" */;
+			buildPhases = (
+				DA5B66FDE08235C159E3179E /* [CP] Check Pods Manifest.lock */,
+				FA22E9982662071A0084A87A /* Headers */,
+				FA22E9992662071A0084A87A /* Sources */,
+				FA22E99A2662071A0084A87A /* Frameworks */,
+				FA22E99B2662071A0084A87A /* Resources */,
+				FAD1BF322662247400569AED /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmountInput;
+			productName = AmountInput;
+			productReference = FA22E99D2662071A0084A87A /* AmountInput.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA22E9942662071A0084A87A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FA22E99C2662071A0084A87A = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = FA22E9972662071A0084A87A /* Build configuration list for PBXProject "AmountInput" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA22E9932662071A0084A87A;
+			productRefGroup = FA22E99E2662071A0084A87A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA22E99C2662071A0084A87A /* AmountInput */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA22E99B2662071A0084A87A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD42BCF266210600090E9D0 /* Asset.xcassets in Resources */,
+				FA32CF632663594600B97C9E /* ConfirmPinViewController.xib in Resources */,
+				FA10A58D26638D4E00C29812 /* DetailsViewController.xib in Resources */,
+				FAD42BCC26620FE80090E9D0 /* AmountInputViewController.xib in Resources */,
+				FA631735266286980056B9EE /* AmountConfirmViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA5B66FDE08235C159E3179E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmountInput-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA22E9992662071A0084A87A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA63174A2662B19B0056B9EE /* AmountConfirmInteractorOutput.swift in Sources */,
+				FA6317392662946D0056B9EE /* AmountConfirmRouter.swift in Sources */,
+				FA63173B266294790056B9EE /* AmountConfirmRouterImpl.swift in Sources */,
+				FA10A52126636C0A00C29812 /* ConfirmPinInteractor.swift in Sources */,
+				FA10A50B266360F200C29812 /* ConfirmPinInteractorOutput.swift in Sources */,
+				FA631734266286980056B9EE /* AmountConfirmViewController.swift in Sources */,
+				FAD1BF3B2662289D00569AED /* AmountInputRouterImpl.swift in Sources */,
+				FA10A509266360DF00C29812 /* ConfirmPinPresenter.swift in Sources */,
+				FA63173D266296A10056B9EE /* AmountConfirmPresenter.swift in Sources */,
+				FAD42BCB26620FE80090E9D0 /* AmountInputViewController.swift in Sources */,
+				FA32CF6826635AE200B97C9E /* ConfirmPinRouterImpl.swift in Sources */,
+				FA10A58C26638D4E00C29812 /* DetailsViewController.swift in Sources */,
+				FA32CF6626635AD600B97C9E /* ConfirmPinRouter.swift in Sources */,
+				FAD1BF392662283500569AED /* AmountInputRouter.swift in Sources */,
+				FA32CF622663594600B97C9E /* ConfirmPinViewController.swift in Sources */,
+				FAD1BF4526622F8B00569AED /* AmountInputPresenter.swift in Sources */,
+				FA63174F2662B4B70056B9EE /* AmountConfirmView.swift in Sources */,
+				FA10A5972663AB7400C29812 /* DetailsPresenterImpl.swift in Sources */,
+				FA10A5952663AB6700C29812 /* DetailsPresenter.swift in Sources */,
+				FA63174C2662B1A60056B9EE /* AmountConfirmInteractorImpl.swift in Sources */,
+				FA10A52526636F5D00C29812 /* ConfirmPinView.swift in Sources */,
+				FA63173F266296B20056B9EE /* AmountConfirmPresenterImpl.swift in Sources */,
+				FA6317482662B1830056B9EE /* AmountConfirmInteractor.swift in Sources */,
+				FA10A52326636CA300C29812 /* ConfirmPinInteractorImpl.swift in Sources */,
+				FAD1BF472662301A00569AED /* AmountInputPresenterImpl.swift in Sources */,
+				FA10A5922663AB4A00C29812 /* DetailsRouterImpl.swift in Sources */,
+				FA10A5902663AB3C00C29812 /* DetailsRouter.swift in Sources */,
+				FA10A50D266360FD00C29812 /* ConfirmPinPresenterImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA22E9A32662071A0084A87A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA22E9A42662071A0084A87A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA22E9A62662071A0084A87A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D4CE1DA3B389487F8D070EF /* Pods-AmountInput.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AmountInput/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.casestudy.AmountInput;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA22E9A72662071A0084A87A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C8E7C05B602E8A6135EBB09 /* Pods-AmountInput.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AmountInput/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.casestudy.AmountInput;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA22E9972662071A0084A87A /* Build configuration list for PBXProject "AmountInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA22E9A32662071A0084A87A /* Debug */,
+				FA22E9A42662071A0084A87A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA22E9A52662071A0084A87A /* Build configuration list for PBXNativeTarget "AmountInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA22E9A62662071A0084A87A /* Debug */,
+				FA22E9A72662071A0084A87A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA22E9942662071A0084A87A /* Project object */;
+}

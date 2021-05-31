@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-ExtraBold.ttf">
+            <string>NunitoSans-ExtraBold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Login" customModuleProvider="target">
+            <connections>
+                <outlet property="emailField" destination="7o7-qB-njm" id="DQu-gN-7Be"/>
+                <outlet property="passwordField" destination="pg4-br-5H2" id="g5a-yd-6gC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewLogin" destination="Qf1-KQ-nIw" id="2n9-F3-SLW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnG-Wo-R3s">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WfU-bu-rd5" userLabel="Main View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zwallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRl-Tt-O9D">
+                                    <rect key="frame" x="146" y="60" width="83.5" height="36"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="2V1-oQ-Deb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="NunitoSans-ExtraBold" family="Nunito Sans" pointSize="26"/>
+                                    <color key="textColor" red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qf1-KQ-nIw">
+                                    <rect key="frame" x="0.0" y="146" width="375" height="521"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjh-jI-hWP">
+                                            <rect key="frame" x="157.5" y="35" width="60" height="33"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="33" id="d9c-fx-sCM"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
+                                            <color key="textColor" red="0.22745098039215686" green="0.23921568627450979" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaF-QV-ytW">
+                                            <rect key="frame" x="45" y="93" width="285" height="37.5"/>
+                                            <string key="text">Login to your existing account to access
+all the features in Zwallet.</string>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                            <color key="textColor" red="0.22745098039215686" green="0.23921568627450979" blue="0.25882352941176467" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECd-tw-kD1" userLabel="Email">
+                                            <rect key="frame" x="16" y="180.5" width="343" height="26.5"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7o7-qB-njm" userLabel="Email Field">
+                                                    <rect key="frame" x="34" y="0.0" width="309" height="20.5"/>
+                                                    <color key="textColor" red="0.22745098039215686" green="0.23921568627450979" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail" translatesAutoresizingMaskIntoConstraints="NO" id="pBl-rX-wrg" userLabel="Email Img">
+                                                    <rect key="frame" x="0.0" y="-1.5" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="24" id="QZT-rR-jae"/>
+                                                        <constraint firstAttribute="height" constant="24" id="qe8-yE-Yay"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ouv-M6-C5w" userLabel="Email Line">
+                                                    <rect key="frame" x="0.0" y="25.5" width="343" height="1"/>
+                                                    <color key="backgroundColor" red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="Rhm-qH-g3E"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Ouv-M6-C5w" secondAttribute="bottom" id="BXO-Qq-U9n"/>
+                                                <constraint firstItem="pBl-rX-wrg" firstAttribute="centerY" secondItem="7o7-qB-njm" secondAttribute="centerY" id="Ebd-5a-i8a"/>
+                                                <constraint firstItem="pBl-rX-wrg" firstAttribute="leading" secondItem="ECd-tw-kD1" secondAttribute="leading" id="JGq-OG-puC"/>
+                                                <constraint firstItem="7o7-qB-njm" firstAttribute="leading" secondItem="pBl-rX-wrg" secondAttribute="trailing" constant="10" id="SxR-bZ-fpD"/>
+                                                <constraint firstItem="7o7-qB-njm" firstAttribute="top" secondItem="ECd-tw-kD1" secondAttribute="top" id="evi-pA-TDL"/>
+                                                <constraint firstItem="Ouv-M6-C5w" firstAttribute="leading" secondItem="ECd-tw-kD1" secondAttribute="leading" id="jVS-bs-wKM"/>
+                                                <constraint firstAttribute="trailing" secondItem="7o7-qB-njm" secondAttribute="trailing" id="mnw-qi-EeY"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ouv-M6-C5w" secondAttribute="trailing" id="oN5-0j-1T4"/>
+                                                <constraint firstItem="Ouv-M6-C5w" firstAttribute="top" secondItem="7o7-qB-njm" secondAttribute="bottom" constant="5" id="r82-yf-kgY"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RgM-cz-Azw" userLabel="Password">
+                                            <rect key="frame" x="16" y="247" width="343" height="25"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pg4-br-5H2" userLabel="Password Field">
+                                                    <rect key="frame" x="34" y="0.0" width="280" height="19"/>
+                                                    <color key="textColor" red="0.22745098039215686" green="0.23921568627450979" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                </textField>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="zJy-Ux-Stp" userLabel="Password Img">
+                                                    <rect key="frame" x="0.0" y="-2.5" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="0Ca-0N-V8v"/>
+                                                        <constraint firstAttribute="width" constant="24" id="Or8-ge-Av1"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4B-cT-m1E" userLabel="Password Line">
+                                                    <rect key="frame" x="0.0" y="24" width="343" height="1"/>
+                                                    <color key="backgroundColor" red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="ACn-EP-wXL"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye-crossed" translatesAutoresizingMaskIntoConstraints="NO" id="5dp-PO-Pb2" userLabel="Password Img">
+                                                    <rect key="frame" x="319" y="-2.5" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="K70-Ks-xCw"/>
+                                                        <constraint firstAttribute="width" constant="24" id="afh-vE-UVr"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="zJy-Ux-Stp" firstAttribute="centerY" secondItem="pg4-br-5H2" secondAttribute="centerY" id="2Rx-h1-XQZ"/>
+                                                <constraint firstItem="5dp-PO-Pb2" firstAttribute="leading" secondItem="pg4-br-5H2" secondAttribute="trailing" constant="5" id="IGi-Jd-8pf"/>
+                                                <constraint firstAttribute="trailing" secondItem="5dp-PO-Pb2" secondAttribute="trailing" id="T6z-6c-RXM"/>
+                                                <constraint firstItem="pg4-br-5H2" firstAttribute="leading" secondItem="zJy-Ux-Stp" secondAttribute="trailing" constant="10" id="WOG-nY-Zfs"/>
+                                                <constraint firstItem="W4B-cT-m1E" firstAttribute="leading" secondItem="RgM-cz-Azw" secondAttribute="leading" id="XVL-fh-xNe"/>
+                                                <constraint firstItem="pg4-br-5H2" firstAttribute="top" secondItem="RgM-cz-Azw" secondAttribute="top" id="Zyl-bL-5tp"/>
+                                                <constraint firstItem="5dp-PO-Pb2" firstAttribute="centerY" secondItem="pg4-br-5H2" secondAttribute="centerY" id="goH-GN-JNR"/>
+                                                <constraint firstItem="zJy-Ux-Stp" firstAttribute="leading" secondItem="RgM-cz-Azw" secondAttribute="leading" id="lKS-X2-6gB"/>
+                                                <constraint firstAttribute="bottom" secondItem="W4B-cT-m1E" secondAttribute="bottom" id="nUH-jr-LDP"/>
+                                                <constraint firstItem="W4B-cT-m1E" firstAttribute="top" secondItem="pg4-br-5H2" secondAttribute="bottom" constant="5" id="rAk-0F-qvZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="W4B-cT-m1E" secondAttribute="trailing" id="yGd-6w-IRJ"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X33-Zx-ql2">
+                                            <rect key="frame" x="16" y="385" width="343" height="57"/>
+                                            <color key="backgroundColor" red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="57" id="tua-Yk-lR6"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="NunitoSans-ExtraBold" family="Nunito Sans" pointSize="18"/>
+                                            <state key="normal" title="Login">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="QC2-ke-CMx"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkF-sh-9An" userLabel="Sign Up">
+                                            <rect key="frame" x="52" y="457" width="271.5" height="34"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account? Let’s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ig8-nZ-WgQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="208.5" height="34"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                                    <color key="textColor" systemColor="systemGray2Color"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PO6-Iz-HhB">
+                                                    <rect key="frame" x="213.5" y="0.0" width="58" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="CeI-ni-imN"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="16"/>
+                                                    <state key="normal" title="Sign Up">
+                                                        <color key="titleColor" red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="signUpAction:" destination="-1" eventType="touchUpInside" id="kLf-lR-hpA"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="PO6-Iz-HhB" firstAttribute="leading" secondItem="ig8-nZ-WgQ" secondAttribute="trailing" constant="5" id="8ah-2K-0Qf"/>
+                                                <constraint firstAttribute="trailing" secondItem="PO6-Iz-HhB" secondAttribute="trailing" id="A0H-Pu-IEE"/>
+                                                <constraint firstAttribute="bottom" secondItem="PO6-Iz-HhB" secondAttribute="bottom" id="MD4-LN-NPh"/>
+                                                <constraint firstAttribute="bottom" secondItem="ig8-nZ-WgQ" secondAttribute="bottom" id="YAd-KY-noQ"/>
+                                                <constraint firstItem="PO6-Iz-HhB" firstAttribute="top" secondItem="wkF-sh-9An" secondAttribute="top" id="cG2-4c-sYg"/>
+                                                <constraint firstItem="ig8-nZ-WgQ" firstAttribute="leading" secondItem="wkF-sh-9An" secondAttribute="leading" id="eWG-jk-T8p"/>
+                                                <constraint firstItem="ig8-nZ-WgQ" firstAttribute="top" secondItem="wkF-sh-9An" secondAttribute="top" id="nMh-JF-uEi"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giY-EH-DlN">
+                                            <rect key="frame" x="245" y="288" width="114" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="WGs-FU-zJ3"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="14"/>
+                                            <color key="textColor" red="0.22745098039215686" green="0.23921568627450979" blue="0.25882352941176467" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="wkF-sh-9An" firstAttribute="centerX" secondItem="Qf1-KQ-nIw" secondAttribute="centerX" id="0ND-oM-tbB"/>
+                                        <constraint firstAttribute="trailing" secondItem="X33-Zx-ql2" secondAttribute="trailing" constant="16" id="F48-YZ-8ct"/>
+                                        <constraint firstItem="uaF-QV-ytW" firstAttribute="top" secondItem="qjh-jI-hWP" secondAttribute="bottom" constant="25" id="F9d-FS-lv8"/>
+                                        <constraint firstAttribute="trailing" secondItem="RgM-cz-Azw" secondAttribute="trailing" constant="16" id="H2g-ql-bVq"/>
+                                        <constraint firstAttribute="trailing" secondItem="giY-EH-DlN" secondAttribute="trailing" constant="16" id="IU5-Qa-taa"/>
+                                        <constraint firstItem="giY-EH-DlN" firstAttribute="top" secondItem="RgM-cz-Azw" secondAttribute="bottom" constant="16" id="NhF-1q-UNV"/>
+                                        <constraint firstAttribute="trailing" secondItem="ECd-tw-kD1" secondAttribute="trailing" constant="16" id="Pap-8D-uZ1"/>
+                                        <constraint firstItem="qjh-jI-hWP" firstAttribute="centerX" secondItem="Qf1-KQ-nIw" secondAttribute="centerX" id="WLN-8g-Y6l"/>
+                                        <constraint firstAttribute="trailing" secondItem="uaF-QV-ytW" secondAttribute="trailing" constant="45" id="YQc-GX-dKo"/>
+                                        <constraint firstItem="RgM-cz-Azw" firstAttribute="top" secondItem="ECd-tw-kD1" secondAttribute="bottom" constant="40" id="cXE-gb-mUE"/>
+                                        <constraint firstItem="ECd-tw-kD1" firstAttribute="top" secondItem="uaF-QV-ytW" secondAttribute="bottom" constant="50" id="ey8-kR-5B4"/>
+                                        <constraint firstItem="wkF-sh-9An" firstAttribute="top" secondItem="X33-Zx-ql2" secondAttribute="bottom" constant="15" id="jsp-DJ-DXe"/>
+                                        <constraint firstItem="X33-Zx-ql2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RgM-cz-Azw" secondAttribute="bottom" constant="100.5" id="nFI-4O-VZL"/>
+                                        <constraint firstItem="qjh-jI-hWP" firstAttribute="top" secondItem="Qf1-KQ-nIw" secondAttribute="top" constant="35" id="obB-ES-Ne2"/>
+                                        <constraint firstAttribute="bottom" secondItem="wkF-sh-9An" secondAttribute="bottom" constant="30" id="pR5-qe-jqD"/>
+                                        <constraint firstItem="ECd-tw-kD1" firstAttribute="leading" secondItem="Qf1-KQ-nIw" secondAttribute="leading" constant="16" id="rdo-UD-oY1"/>
+                                        <constraint firstItem="uaF-QV-ytW" firstAttribute="leading" secondItem="Qf1-KQ-nIw" secondAttribute="leading" constant="45" id="sAa-34-Pwa"/>
+                                        <constraint firstItem="RgM-cz-Azw" firstAttribute="leading" secondItem="Qf1-KQ-nIw" secondAttribute="leading" constant="16" id="uN1-Iy-JJS"/>
+                                        <constraint firstItem="X33-Zx-ql2" firstAttribute="leading" secondItem="Qf1-KQ-nIw" secondAttribute="leading" constant="16" id="zyd-cN-kP5"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="topCornerRadius">
+                                            <real key="value" value="32"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="BgZwallet"/>
+                            <constraints>
+                                <constraint firstItem="Qf1-KQ-nIw" firstAttribute="leading" secondItem="WfU-bu-rd5" secondAttribute="leading" id="2tM-2O-ysC"/>
+                                <constraint firstItem="Qf1-KQ-nIw" firstAttribute="top" secondItem="TRl-Tt-O9D" secondAttribute="bottom" constant="50" id="2x1-ZK-fE9"/>
+                                <constraint firstAttribute="bottom" secondItem="Qf1-KQ-nIw" secondAttribute="bottom" id="SgE-gL-Kd6"/>
+                                <constraint firstItem="TRl-Tt-O9D" firstAttribute="top" secondItem="WfU-bu-rd5" secondAttribute="top" constant="60" id="UMy-TZ-vbl"/>
+                                <constraint firstAttribute="trailing" secondItem="Qf1-KQ-nIw" secondAttribute="trailing" id="dDW-i0-ZBn"/>
+                                <constraint firstItem="TRl-Tt-O9D" firstAttribute="centerX" secondItem="WfU-bu-rd5" secondAttribute="centerX" id="oNw-WQ-xhr"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="WfU-bu-rd5" secondAttribute="trailing" id="3Jo-2j-9e5"/>
+                        <constraint firstItem="WfU-bu-rd5" firstAttribute="height" secondItem="bnG-Wo-R3s" secondAttribute="height" priority="250" id="HZH-Th-0XC"/>
+                        <constraint firstItem="WfU-bu-rd5" firstAttribute="width" secondItem="bnG-Wo-R3s" secondAttribute="width" id="Twf-iz-1TB"/>
+                        <constraint firstItem="WfU-bu-rd5" firstAttribute="leading" secondItem="bnG-Wo-R3s" secondAttribute="leading" id="UMA-MB-PPU"/>
+                        <constraint firstItem="WfU-bu-rd5" firstAttribute="top" secondItem="bnG-Wo-R3s" secondAttribute="top" id="kyl-Kb-62z"/>
+                        <constraint firstAttribute="bottom" secondItem="WfU-bu-rd5" secondAttribute="bottom" id="wvu-Bp-ZqV"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="H0e-Sz-DNB"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="BYa-Nw-mEH"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bnG-Wo-R3s" secondAttribute="trailing" id="Cxr-DQ-Hsd"/>
+                <constraint firstItem="bnG-Wo-R3s" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="EBS-IJ-shu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bnG-Wo-R3s" secondAttribute="bottom" id="c4c-R0-QM7"/>
+                <constraint firstItem="bnG-Wo-R3s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jqU-rz-gBq"/>
+            </constraints>
+            <point key="canvasLocation" x="-149.59999999999999" y="71.514242878560722"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eye-crossed" width="24" height="24"/>
+        <image name="lock" width="24" height="24"/>
+        <image name="mail" width="24" height="24"/>
+        <namedColor name="BgZwallet">
+            <color red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803915" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

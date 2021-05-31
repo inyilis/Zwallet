@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReceivefrViewController" customModule="Receiver" customModuleProvider="target">
+            <connections>
+                <outlet property="contactFound" destination="idL-U3-Hft" id="QfN-E9-ep2"/>
+                <outlet property="searchContacts" destination="FVL-Rf-DTL" id="cou-Nf-B1l"/>
+                <outlet property="tableView" destination="Na9-iM-ZTu" id="xKt-a1-R5Y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Na9-iM-ZTu">
+                    <rect key="frame" x="0.0" y="243.5" width="414" height="618.5"/>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.98823529409999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnH-Jy-7Ar">
+                    <rect key="frame" x="16" y="64" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="Qnl-8q-o0P"/>
+                        <constraint firstAttribute="width" constant="28" id="W06-ZM-uyo"/>
+                    </constraints>
+                    <state key="normal" image="arrow-left"/>
+                    <connections>
+                        <action selector="backToHome:" destination="-1" eventType="touchUpInside" id="MLf-GZ-5Mh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Receiver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWN-9b-ZED">
+                    <rect key="frame" x="69" y="66.5" width="122.5" height="23.5"/>
+                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
+                    <color key="textColor" name="BackLabel"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Contacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tL-iJ-HRG">
+                    <rect key="frame" x="16" y="191" width="98" height="21"/>
+                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                    <color key="textColor" red="0.31764705879999999" green="0.30980392159999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17 Contact Founds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idL-U3-Hft">
+                    <rect key="frame" x="16" y="222" width="120.5" height="16.5"/>
+                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
+                    <color key="textColor" red="0.56078431370000004" green="0.56078431370000004" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search receiver here" translatesAutoresizingMaskIntoConstraints="NO" id="FVL-Rf-DTL">
+                    <rect key="frame" x="16" y="115" width="382" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                </searchBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="BgZwallet"/>
+            <constraints>
+                <constraint firstItem="5tL-iJ-HRG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="1x6-1u-5dX"/>
+                <constraint firstItem="Na9-iM-ZTu" firstAttribute="top" secondItem="idL-U3-Hft" secondAttribute="bottom" constant="5" id="7oZ-bC-oaM"/>
+                <constraint firstItem="FVL-Rf-DTL" firstAttribute="top" secondItem="sWN-9b-ZED" secondAttribute="bottom" constant="25" id="9i0-i5-nzB"/>
+                <constraint firstItem="sWN-9b-ZED" firstAttribute="centerY" secondItem="XnH-Jy-7Ar" secondAttribute="centerY" id="BNQ-Jo-aIU"/>
+                <constraint firstItem="sWN-9b-ZED" firstAttribute="leading" secondItem="XnH-Jy-7Ar" secondAttribute="trailing" constant="25" id="GdR-7S-qeo"/>
+                <constraint firstItem="Na9-iM-ZTu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Rng-E1-Zem"/>
+                <constraint firstItem="XnH-Jy-7Ar" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="VZR-Rv-aXQ"/>
+                <constraint firstItem="XnH-Jy-7Ar" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="bAx-gr-dYX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FVL-Rf-DTL" secondAttribute="trailing" constant="16" id="cFH-LM-Qfd"/>
+                <constraint firstItem="FVL-Rf-DTL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="pTP-CV-56q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Na9-iM-ZTu" secondAttribute="trailing" id="rQ2-SS-HlM"/>
+                <constraint firstItem="5tL-iJ-HRG" firstAttribute="top" secondItem="FVL-Rf-DTL" secondAttribute="bottom" constant="20" id="rWD-bb-SLa"/>
+                <constraint firstItem="idL-U3-Hft" firstAttribute="top" secondItem="5tL-iJ-HRG" secondAttribute="bottom" constant="10" id="sbt-Cb-uis"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Na9-iM-ZTu" secondAttribute="bottom" id="wIi-qE-kys"/>
+                <constraint firstItem="idL-U3-Hft" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ygm-Zf-waz"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="67.633928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow-left" width="28" height="28"/>
+        <namedColor name="BackLabel">
+            <color red="0.30199998617172241" green="0.29399999976158142" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BgZwallet">
+            <color red="0.98000001907348633" green="0.98799997568130493" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

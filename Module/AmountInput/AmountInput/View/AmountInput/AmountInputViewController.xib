@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AmountInputViewController" customModule="AmountInput" customModuleProvider="target">
+            <connections>
+                <outlet property="inputAmount" destination="qjX-aV-OU4" id="aeH-9t-LSP"/>
+                <outlet property="inputNotes" destination="BEL-lH-wbu" id="axe-R1-Nj2"/>
+                <outlet property="receiverProfileView" destination="lmd-dv-1zw" id="mdS-Ki-tn2"/>
+                <outlet property="userImage" destination="pT7-Pz-iyM" id="k1P-og-miR"/>
+                <outlet property="userName" destination="f0H-Tw-skI" id="fV7-Te-SQ4"/>
+                <outlet property="userPhoneNumber" destination="s0F-s5-zIm" id="rC3-st-eE3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIx-8h-MAn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="we3-Qj-duh" userLabel="Main View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P57-gk-ghM">
+                                    <rect key="frame" x="69" y="22.5" width="71.5" height="23.5"/>
+                                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
+                                    <color key="textColor" name="BackLabel"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acD-KG-MY2">
+                                    <rect key="frame" x="16" y="20" width="28" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="28" id="Iv0-c0-XMY"/>
+                                        <constraint firstAttribute="width" constant="28" id="SS7-dw-2VL"/>
+                                    </constraints>
+                                    <state key="normal" image="arrow-left"/>
+                                    <connections>
+                                        <action selector="backToReceiverAction:" destination="-1" eventType="touchUpInside" id="389-BP-ikJ"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120000 Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voG-On-xiN">
+                                    <rect key="frame" x="126.5" y="207" width="122" height="19"/>
+                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                    <color key="textColor" name="RpAvailable"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLc-p5-okS" userLabel="Notes">
+                                    <rect key="frame" x="16" y="373.5" width="343" height="28"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit-2" translatesAutoresizingMaskIntoConstraints="NO" id="RVb-vT-F23">
+                                            <rect key="frame" x="0.0" y="-2" width="24" height="24"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZk-PN-ga0" userLabel="Line">
+                                            <rect key="frame" x="0.0" y="27" width="343" height="1"/>
+                                            <color key="backgroundColor">
+                                                <string key="name">
+ZwalletPrimary</string>
+                                            </color>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="xKF-QU-ag1"/>
+                                            </constraints>
+                                        </view>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add some notes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BEL-lH-wbu">
+                                            <rect key="frame" x="34" y="0.0" width="309" height="20.5"/>
+                                            <color key="textColor" name="ZwalletDark"/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="BEL-lH-wbu" firstAttribute="top" secondItem="pLc-p5-okS" secondAttribute="top" id="Dql-Be-l8n"/>
+                                        <constraint firstItem="OZk-PN-ga0" firstAttribute="top" secondItem="RVb-vT-F23" secondAttribute="bottom" constant="5" id="Ewy-x3-vps"/>
+                                        <constraint firstItem="OZk-PN-ga0" firstAttribute="leading" secondItem="pLc-p5-okS" secondAttribute="leading" id="Nak-vb-fOx"/>
+                                        <constraint firstAttribute="bottom" secondItem="OZk-PN-ga0" secondAttribute="bottom" id="T4I-P9-v3V"/>
+                                        <constraint firstAttribute="trailing" secondItem="OZk-PN-ga0" secondAttribute="trailing" id="Tb5-gS-hMg"/>
+                                        <constraint firstItem="BEL-lH-wbu" firstAttribute="leading" secondItem="RVb-vT-F23" secondAttribute="trailing" constant="10" id="VGF-dS-eCz"/>
+                                        <constraint firstAttribute="trailing" secondItem="BEL-lH-wbu" secondAttribute="trailing" id="aGI-vW-e43"/>
+                                        <constraint firstItem="RVb-vT-F23" firstAttribute="centerY" secondItem="BEL-lH-wbu" secondAttribute="centerY" id="qR4-Jg-MhP"/>
+                                        <constraint firstItem="RVb-vT-F23" firstAttribute="leading" secondItem="pLc-p5-okS" secondAttribute="leading" id="x05-XW-PcX"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sK8-mB-LJZ">
+                                    <rect key="frame" x="16" y="580" width="343" height="57"/>
+                                    <color key="backgroundColor">
+                                        <string key="name">
+ZwalletPrimary</string>
+                                    </color>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="57" id="gGu-Ke-2Ix"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                                    <state key="normal" title="Next">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="6pj-8I-sg4"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qjX-aV-OU4">
+                                    <rect key="frame" x="16" y="258" width="343" height="50.5"/>
+                                    <color key="textColor">
+                                        <string key="name">
+ZwalletPrimary</string>
+                                    </color>
+                                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="42"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmd-dv-1zw" userLabel="Receiver Profile">
+                                    <rect key="frame" x="16" y="86" width="343" height="96"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pT7-Pz-iyM">
+                                            <rect key="frame" x="16" y="20" width="56" height="56"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="56" id="ArK-6z-BN6"/>
+                                                <constraint firstAttribute="width" constant="56" id="akS-VN-Qby"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0H-Tw-skI">
+                                            <rect key="frame" x="87" y="23" width="43" height="19"/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="16"/>
+                                            <color key="textColor" name="ReceiverName"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0F-s5-zIm">
+                                            <rect key="frame" x="87" y="56.5" width="95" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
+                                            <color key="textColor" name="ReceiverPhone"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="s0F-s5-zIm" firstAttribute="leading" secondItem="pT7-Pz-iyM" secondAttribute="trailing" constant="15" id="5Up-PF-waH"/>
+                                        <constraint firstItem="f0H-Tw-skI" firstAttribute="leading" secondItem="pT7-Pz-iyM" secondAttribute="trailing" constant="15" id="8q0-ga-rds"/>
+                                        <constraint firstItem="pT7-Pz-iyM" firstAttribute="leading" secondItem="lmd-dv-1zw" secondAttribute="leading" constant="16" id="itA-sg-ZuT"/>
+                                        <constraint firstItem="pT7-Pz-iyM" firstAttribute="top" secondItem="lmd-dv-1zw" secondAttribute="top" constant="20" id="jlf-Fo-zvd"/>
+                                        <constraint firstAttribute="bottom" secondItem="s0F-s5-zIm" secondAttribute="bottom" constant="23" id="o8G-Up-Cu6"/>
+                                        <constraint firstAttribute="bottom" secondItem="pT7-Pz-iyM" secondAttribute="bottom" constant="20" id="pFF-Go-MRb"/>
+                                        <constraint firstItem="f0H-Tw-skI" firstAttribute="top" secondItem="lmd-dv-1zw" secondAttribute="top" constant="23" id="q2n-DY-Q44"/>
+                                        <constraint firstAttribute="height" constant="96" id="wqi-57-Wul"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="BgZwallet"/>
+                            <constraints>
+                                <constraint firstItem="acD-KG-MY2" firstAttribute="top" secondItem="we3-Qj-duh" secondAttribute="top" constant="20" id="CHk-Q8-gGl"/>
+                                <constraint firstAttribute="trailing" secondItem="qjX-aV-OU4" secondAttribute="trailing" constant="16" id="CjU-Pq-QTy"/>
+                                <constraint firstItem="P57-gk-ghM" firstAttribute="leading" secondItem="acD-KG-MY2" secondAttribute="trailing" constant="25" id="N37-sb-aDS"/>
+                                <constraint firstItem="lmd-dv-1zw" firstAttribute="top" secondItem="P57-gk-ghM" secondAttribute="bottom" constant="40" id="OgN-Sa-l9L"/>
+                                <constraint firstAttribute="trailing" secondItem="pLc-p5-okS" secondAttribute="trailing" constant="16" id="OkZ-VL-3wC"/>
+                                <constraint firstItem="sK8-mB-LJZ" firstAttribute="leading" secondItem="we3-Qj-duh" secondAttribute="leading" constant="16" id="PVr-Fy-GtQ"/>
+                                <constraint firstItem="voG-On-xiN" firstAttribute="centerX" secondItem="we3-Qj-duh" secondAttribute="centerX" id="QUS-yV-DMs"/>
+                                <constraint firstItem="P57-gk-ghM" firstAttribute="centerY" secondItem="acD-KG-MY2" secondAttribute="centerY" id="S2S-AO-GQD"/>
+                                <constraint firstAttribute="bottom" secondItem="sK8-mB-LJZ" secondAttribute="bottom" constant="30" id="cus-Nh-vit"/>
+                                <constraint firstAttribute="trailing" secondItem="sK8-mB-LJZ" secondAttribute="trailing" constant="16" id="dc4-KJ-euu"/>
+                                <constraint firstItem="sK8-mB-LJZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pLc-p5-okS" secondAttribute="bottom" constant="163.5" id="gxM-7q-9YR"/>
+                                <constraint firstAttribute="trailing" secondItem="lmd-dv-1zw" secondAttribute="trailing" constant="16" id="k9Z-nd-P00"/>
+                                <constraint firstItem="qjX-aV-OU4" firstAttribute="leading" secondItem="we3-Qj-duh" secondAttribute="leading" constant="16" id="kge-I3-jRd"/>
+                                <constraint firstItem="acD-KG-MY2" firstAttribute="leading" secondItem="we3-Qj-duh" secondAttribute="leading" constant="16" id="mr1-bu-LJo"/>
+                                <constraint firstItem="pLc-p5-okS" firstAttribute="leading" secondItem="we3-Qj-duh" secondAttribute="leading" constant="16" id="qsO-1D-TAJ"/>
+                                <constraint firstItem="lmd-dv-1zw" firstAttribute="leading" secondItem="we3-Qj-duh" secondAttribute="leading" constant="16" id="vTb-mg-DoL"/>
+                                <constraint firstItem="voG-On-xiN" firstAttribute="top" secondItem="lmd-dv-1zw" secondAttribute="bottom" constant="25" id="wkB-MC-jEm"/>
+                                <constraint firstItem="qjX-aV-OU4" firstAttribute="top" secondItem="voG-On-xiN" secondAttribute="bottom" constant="32" id="xUv-PG-vkF"/>
+                                <constraint firstItem="pLc-p5-okS" firstAttribute="top" secondItem="qjX-aV-OU4" secondAttribute="bottom" constant="65" id="zdS-J4-Ln5"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="we3-Qj-duh" firstAttribute="width" secondItem="SIx-8h-MAn" secondAttribute="width" id="ATX-cD-Cpn"/>
+                        <constraint firstItem="we3-Qj-duh" firstAttribute="height" secondItem="SIx-8h-MAn" secondAttribute="height" priority="250" id="Evs-Gd-otK"/>
+                        <constraint firstAttribute="bottom" secondItem="we3-Qj-duh" secondAttribute="bottom" id="Goj-f3-5Yy"/>
+                        <constraint firstItem="we3-Qj-duh" firstAttribute="leading" secondItem="SIx-8h-MAn" secondAttribute="leading" id="Lkl-lf-IuB"/>
+                        <constraint firstAttribute="trailing" secondItem="we3-Qj-duh" secondAttribute="trailing" id="dTR-tV-rwN"/>
+                        <constraint firstItem="we3-Qj-duh" firstAttribute="top" secondItem="SIx-8h-MAn" secondAttribute="top" id="inN-T8-tOg"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="yfb-hR-1Hg"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Q5v-3t-G8H"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="SIx-8h-MAn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2FC-Jz-LpQ"/>
+                <constraint firstItem="SIx-8h-MAn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="W3W-5d-YOQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="SIx-8h-MAn" secondAttribute="bottom" id="XeJ-Qh-tRn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SIx-8h-MAn" secondAttribute="trailing" id="k9t-jd-qaV"/>
+            </constraints>
+            <point key="canvasLocation" x="-61.600000000000001" y="67.916041979010501"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow-left" width="28" height="28"/>
+        <image name="edit-2" width="24" height="24"/>
+        <namedColor>
+            <string key="name">
+ZwalletPrimary</string>
+            <color red="0.3880000114440918" green="0.47499999403953552" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackLabel">
+            <color red="0.30199998617172241" green="0.29399999976158142" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BgZwallet">
+            <color red="0.98000001907348633" green="0.98799997568130493" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ReceiverName">
+            <color red="0.30199998617172241" green="0.29399999976158142" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ReceiverPhone">
+            <color red="0.4779999852180481" green="0.47099998593330383" blue="0.52499997615814209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RpAvailable">
+            <color red="0.48600000143051147" green="0.47099998593330383" blue="0.58399999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ZwalletDark">
+            <color red="0.22699999809265137" green="0.23899999260902405" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

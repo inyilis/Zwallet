@@ -1,0 +1,82 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
+use_frameworks!
+
+workspace 'Zwallet'
+
+def common_dependency
+  pod 'Kingfisher'
+  pod 'OTPFieldView'
+end
+
+target 'App' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for App
+  pod 'Moya'
+  pod 'netfox', :configuration => ['Debug']
+  common_dependency
+end
+
+target 'Core' do
+  project '../Module/Core/Core'
+
+  pod 'Moya'
+  common_dependency
+end
+
+target 'History' do
+  project '../Module/History/History'
+  common_dependency
+end
+
+target 'Home' do
+  project '../Module/Home/Home'
+  common_dependency
+end
+
+target 'Login' do
+  project '../Module/Login/Login'
+end
+
+target 'SignUp' do
+  project '../Module/SignUp/SignUp'
+end
+
+target 'CreatePin' do
+  project '../Module/CreatePin/CreatePin'
+  common_dependency
+end
+
+target 'Otp' do
+  project '../Module/Otp/Otp'
+  common_dependency
+end
+
+target 'Receiver' do
+  project '../Module/Receiver/Receiver'
+  common_dependency
+end
+
+target 'AmountInput' do
+  project '../Module/AmountInput/AmountInput'
+  common_dependency
+end
+
+# target 'PinConfirm' do
+#   project '../Module/PinConfirm/PinConfirm'
+#   pod 'OTPFieldView'
+#   common_dependency
+# end
+
+target 'TopUp' do
+  project '../Module/TopUp/TopUp'
+  common_dependency
+end
+
+target 'Profile' do
+  project '../Module/Profile/Profile'
+  common_dependency
+end

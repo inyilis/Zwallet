@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-ExtraBold.ttf">
+            <string>NunitoSans-ExtraBold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreatePinViewController" customModule="CreatePin" customModuleProvider="target">
+            <connections>
+                <outlet property="tf1" destination="IqM-0Z-Iry" id="InI-e9-fT4"/>
+                <outlet property="tf2" destination="9VP-sk-LDm" id="boN-C8-6Xb"/>
+                <outlet property="tf3" destination="ee8-1u-Pta" id="j6D-Jl-wXW"/>
+                <outlet property="tf4" destination="e7l-f8-TQM" id="sly-Bz-gxU"/>
+                <outlet property="tf5" destination="aNY-uo-L5c" id="Qhh-OW-7Q9"/>
+                <outlet property="tf6" destination="Yly-1q-S6T" id="16N-0z-4cB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Yt-AB-HS4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0UR-3o-QCr" userLabel="Main View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lq5-xp-eVH">
+                                    <rect key="frame" x="0.0" y="140.5" width="375" height="526.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Security PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Z3-NP-BHp">
+                                            <rect key="frame" x="82" y="35" width="211.5" height="28"/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
+                                            <color key="textColor" red="0.22745098039215686" green="0.23921568627450979" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a PIN that’s contain 6 digits number for security purpose in Zwallet." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKQ-TB-R9t">
+                                            <rect key="frame" x="20" y="88" width="335" height="37.5"/>
+                                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                            <color key="textColor" red="0.22745098039215686" green="0.23921568627450979" blue="0.25882352941176467" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zLL-WS-7OG">
+                                            <rect key="frame" x="20" y="175.5" width="335" height="57"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IqM-0Z-Iry">
+                                                    <rect key="frame" x="0.0" y="0.0" width="47.5" height="57"/>
+                                                    <color key="textColor" red="0.2274509804" green="0.23921568630000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="24"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9VP-sk-LDm">
+                                                    <rect key="frame" x="57.5" y="0.0" width="47.5" height="57"/>
+                                                    <color key="textColor" red="0.2274509804" green="0.23921568630000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="24"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ee8-1u-Pta">
+                                                    <rect key="frame" x="115" y="0.0" width="47.5" height="57"/>
+                                                    <color key="textColor" red="0.2274509804" green="0.23921568630000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="24"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7l-f8-TQM">
+                                                    <rect key="frame" x="172.5" y="0.0" width="47.5" height="57"/>
+                                                    <color key="textColor" red="0.2274509804" green="0.23921568630000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="24"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aNY-uo-L5c">
+                                                    <rect key="frame" x="230" y="0.0" width="47.5" height="57"/>
+                                                    <color key="textColor" red="0.2274509804" green="0.23921568630000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="24"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yly-1q-S6T">
+                                                    <rect key="frame" x="287.5" y="0.0" width="47.5" height="57"/>
+                                                    <color key="textColor" red="0.2274509804" green="0.23921568630000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="24"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="57" id="mOU-3F-RjV"/>
+                                            </constraints>
+                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2a-Zm-9CR">
+                                            <rect key="frame" x="16" y="439.5" width="343" height="57"/>
+                                            <color key="backgroundColor" red="0.38823529410000002" green="0.47450980390000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="57" id="kb8-4l-MVY"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="NunitoSans-ExtraBold" family="Nunito Sans" pointSize="18"/>
+                                            <state key="normal" title="Confirm">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="createPinAction:" destination="-1" eventType="touchUpInside" id="cCY-0U-IAZ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="wKQ-TB-R9t" secondAttribute="trailing" constant="20" id="5I5-Iu-ovg"/>
+                                        <constraint firstItem="8Z3-NP-BHp" firstAttribute="centerX" secondItem="Lq5-xp-eVH" secondAttribute="centerX" id="FPd-HR-JM9"/>
+                                        <constraint firstItem="wKQ-TB-R9t" firstAttribute="top" secondItem="8Z3-NP-BHp" secondAttribute="bottom" constant="25" id="GQb-Bu-uIC"/>
+                                        <constraint firstAttribute="bottom" secondItem="W2a-Zm-9CR" secondAttribute="bottom" constant="30" id="Oy3-pJ-AhD"/>
+                                        <constraint firstAttribute="trailing" secondItem="W2a-Zm-9CR" secondAttribute="trailing" constant="16" id="P6U-AL-XDA"/>
+                                        <constraint firstItem="8Z3-NP-BHp" firstAttribute="top" secondItem="Lq5-xp-eVH" secondAttribute="top" constant="35" id="T28-rH-cRu"/>
+                                        <constraint firstItem="W2a-Zm-9CR" firstAttribute="leading" secondItem="Lq5-xp-eVH" secondAttribute="leading" constant="16" id="ZOa-ig-Zol"/>
+                                        <constraint firstItem="zLL-WS-7OG" firstAttribute="top" secondItem="wKQ-TB-R9t" secondAttribute="bottom" constant="50" id="bAK-Jy-BCt"/>
+                                        <constraint firstItem="W2a-Zm-9CR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zLL-WS-7OG" secondAttribute="bottom" constant="190.5" id="nKH-kL-CtE"/>
+                                        <constraint firstItem="wKQ-TB-R9t" firstAttribute="leading" secondItem="Lq5-xp-eVH" secondAttribute="leading" constant="20" id="sz4-CD-wih"/>
+                                        <constraint firstAttribute="trailing" secondItem="zLL-WS-7OG" secondAttribute="trailing" constant="20" id="tOV-bB-LMD"/>
+                                        <constraint firstItem="zLL-WS-7OG" firstAttribute="leading" secondItem="Lq5-xp-eVH" secondAttribute="leading" constant="20" id="wEh-Ks-k9y"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="topCornerRadius">
+                                            <real key="value" value="32"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zwallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8B-2L-4h0">
+                                    <rect key="frame" x="146" y="60" width="83.5" height="30.5"/>
+                                    <fontDescription key="fontDescription" name="NunitoSans-ExtraBold" family="Nunito Sans" pointSize="26"/>
+                                    <color key="textColor" red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="BgZwallet"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Lq5-xp-eVH" secondAttribute="bottom" id="1Oe-0E-X6l"/>
+                                <constraint firstItem="U8B-2L-4h0" firstAttribute="centerX" secondItem="0UR-3o-QCr" secondAttribute="centerX" id="FTD-va-7tf"/>
+                                <constraint firstItem="Lq5-xp-eVH" firstAttribute="leading" secondItem="0UR-3o-QCr" secondAttribute="leading" id="Obx-DL-XNn"/>
+                                <constraint firstItem="U8B-2L-4h0" firstAttribute="top" secondItem="0UR-3o-QCr" secondAttribute="top" constant="60" id="jPs-eb-ZeB"/>
+                                <constraint firstAttribute="trailing" secondItem="Lq5-xp-eVH" secondAttribute="trailing" id="naB-7P-7LL"/>
+                                <constraint firstItem="Lq5-xp-eVH" firstAttribute="top" secondItem="U8B-2L-4h0" secondAttribute="bottom" constant="50" id="zUt-Pm-FwC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.98823529409999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0UR-3o-QCr" secondAttribute="trailing" id="4rV-o3-pse"/>
+                        <constraint firstItem="0UR-3o-QCr" firstAttribute="height" secondItem="8Yt-AB-HS4" secondAttribute="height" priority="250" id="63q-Sv-2Fw"/>
+                        <constraint firstItem="0UR-3o-QCr" firstAttribute="top" secondItem="8Yt-AB-HS4" secondAttribute="top" id="BjX-af-3Ya"/>
+                        <constraint firstItem="0UR-3o-QCr" firstAttribute="width" secondItem="8Yt-AB-HS4" secondAttribute="width" id="RE5-b2-lpK"/>
+                        <constraint firstAttribute="bottom" secondItem="0UR-3o-QCr" secondAttribute="bottom" id="VMs-mu-Myo"/>
+                        <constraint firstItem="0UR-3o-QCr" firstAttribute="leading" secondItem="8Yt-AB-HS4" secondAttribute="leading" id="mzN-y8-I8g"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="H8s-il-ahx"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Myb-Hi-2WD"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.9882352941176471" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8Yt-AB-HS4" secondAttribute="bottom" id="KZr-xD-6In"/>
+                <constraint firstItem="8Yt-AB-HS4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="X5Z-Zt-y6H"/>
+                <constraint firstItem="8Yt-AB-HS4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="a2j-3B-np5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Yt-AB-HS4" secondAttribute="trailing" id="r2J-2h-fnf"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="67.916041979010501"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BgZwallet">
+            <color red="0.98000001907348633" green="0.98799997568130493" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
